@@ -1,0 +1,16 @@
+import cv2 
+import matplotlib.pyplot as plt
+path=r'image.jpeg'
+img=cv2.imread(path)
+r,g,b=cv2.split(img)
+cv2.imshow('img',img)
+
+cv2.imshow("Blue",b)
+
+
+cv2.imshow("Red",r)
+
+
+cv2.imshow("Green",g)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
